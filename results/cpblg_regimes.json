@@ -1,0 +1,139 @@
+{
+  "config": {
+    "target_far": 0.1,
+    "n_patients": 800,
+    "seed": 7,
+    "DISCLAIMER": "ALL DATA SYNTHETIC -- method demo only"
+  },
+  "regimes": {
+    "indolent": {
+      "regime": "indolent",
+      "label": "indolent (long sub-LoD dwell)",
+      "growth": [
+        0.04,
+        0.07
+      ],
+      "rows": [
+        {
+          "median_lead_wk": 37.31146652835312,
+          "median_lead_d": 261.1802656984719,
+          "flagged_frac": 0.13953488372093023,
+          "early_sens": 0.10697674418604651,
+          "pre_lod_sens": 0.06511627906976744,
+          "pre_lod_frac": 0.4666666666666667,
+          "n_prog": 215,
+          "n_flagged": 30,
+          "model": "snapshot"
+        },
+        {
+          "median_lead_wk": 40.35546884395095,
+          "median_lead_d": 282.48828190765664,
+          "flagged_frac": 0.14883720930232558,
+          "early_sens": 0.11162790697674418,
+          "pre_lod_sens": 0.07441860465116279,
+          "pre_lod_frac": 0.5,
+          "n_prog": 215,
+          "n_flagged": 32,
+          "model": "slope-CUSUM"
+        },
+        {
+          "median_lead_wk": 17.57082424074146,
+          "median_lead_d": 122.99576968519021,
+          "flagged_frac": 0.35348837209302325,
+          "early_sens": 0.22790697674418606,
+          "pre_lod_sens": 0.10697674418604651,
+          "pre_lod_frac": 0.3026315789473684,
+          "n_prog": 215,
+          "n_flagged": 76,
+          "model": "CP-BLG (ours)"
+        }
+      ]
+    },
+    "slow": {
+      "regime": "slow",
+      "label": "slow",
+      "growth": [
+        0.06,
+        0.11
+      ],
+      "rows": [
+        {
+          "median_lead_wk": 10.694477852106218,
+          "median_lead_d": 74.86134496474352,
+          "flagged_frac": 0.2422907488986784,
+          "early_sens": 0.11013215859030837,
+          "pre_lod_sens": 0.030837004405286344,
+          "pre_lod_frac": 0.12727272727272726,
+          "n_prog": 227,
+          "n_flagged": 55,
+          "model": "snapshot"
+        },
+        {
+          "median_lead_wk": 10.32230916121901,
+          "median_lead_d": 72.25616412853307,
+          "flagged_frac": 0.23788546255506607,
+          "early_sens": 0.10572687224669604,
+          "pre_lod_sens": 0.02643171806167401,
+          "pre_lod_frac": 0.1111111111111111,
+          "n_prog": 227,
+          "n_flagged": 54,
+          "model": "slope-CUSUM"
+        },
+        {
+          "median_lead_wk": 18.80528483764708,
+          "median_lead_d": 131.63699386352954,
+          "flagged_frac": 0.3920704845814978,
+          "early_sens": 0.2555066079295154,
+          "pre_lod_sens": 0.09251101321585903,
+          "pre_lod_frac": 0.23595505617977527,
+          "n_prog": 227,
+          "n_flagged": 89,
+          "model": "CP-BLG (ours)"
+        }
+      ]
+    },
+    "fast": {
+      "regime": "fast",
+      "label": "fast (short sub-LoD dwell)",
+      "growth": [
+        0.1,
+        0.2
+      ],
+      "rows": [
+        {
+          "median_lead_wk": 10.769606061389077,
+          "median_lead_d": 75.38724242972353,
+          "flagged_frac": 0.4,
+          "early_sens": 0.17446808510638298,
+          "pre_lod_sens": 0.03829787234042553,
+          "pre_lod_frac": 0.09574468085106383,
+          "n_prog": 235,
+          "n_flagged": 94,
+          "model": "snapshot"
+        },
+        {
+          "median_lead_wk": 10.769606061389077,
+          "median_lead_d": 75.38724242972353,
+          "flagged_frac": 0.4,
+          "early_sens": 0.1702127659574468,
+          "pre_lod_sens": 0.03404255319148936,
+          "pre_lod_frac": 0.0851063829787234,
+          "n_prog": 235,
+          "n_flagged": 94,
+          "model": "slope-CUSUM"
+        },
+        {
+          "median_lead_wk": 11.45413255099539,
+          "median_lead_d": 80.17892785696773,
+          "flagged_frac": 0.4085106382978723,
+          "early_sens": 0.2,
+          "pre_lod_sens": 0.059574468085106386,
+          "pre_lod_frac": 0.14583333333333334,
+          "n_prog": 235,
+          "n_flagged": 96,
+          "model": "CP-BLG (ours)"
+        }
+      ]
+    }
+  }
+}

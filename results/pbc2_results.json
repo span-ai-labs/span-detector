@@ -1,0 +1,26 @@
+{
+  "dataset": "PBC2 (Mayo Clinic, REAL, public)",
+  "note": "Method analogue for the ctDNA benchmark; not an oncology result.",
+  "config": {
+    "window_bin": 2,
+    "target_far": 0.1,
+    "horizon_years": 8.0,
+    "seed": 7
+  },
+  "results": [
+    {
+      "model": "snapshot",
+      "c_index": 0.8060904526479811,
+      "auc_within_3yr": 0.8523677667269439,
+      "median_lead_years": 1.3853904282115899,
+      "detection_rate": 0.6222222222222222
+    },
+    {
+      "model": "longitudinal",
+      "c_index": 0.7648077256026008,
+      "auc_within_3yr": 0.7981182188065099,
+      "median_lead_years": 1.0308290439163301,
+      "detection_rate": 0.6222222222222222
+    }
+  ]
+}

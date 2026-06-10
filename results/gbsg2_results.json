@@ -1,0 +1,11 @@
+{
+  "dataset": "GBSG2 (German Breast Cancer Study Group 2) -- REAL",
+  "n_patients": 686,
+  "event_rate": 0.4358600583090379,
+  "n_bins": 10,
+  "test_frac": 0.25,
+  "seed": 7,
+  "c_index_cox": 0.6798198838724967,
+  "c_index_deep": 0.6655209197582079,
+  "note": "Cross-sectional real data; validates discrimination, not lead time."
+}

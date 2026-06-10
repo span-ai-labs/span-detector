@@ -1,0 +1,5 @@
+# Span benchmark — runs anywhere, no internet/GPU, no training step.
+numpy
+pandas        # real-data loaders (GBSG-2, PBC2) and feature tables
+matplotlib    # figure generation
+lifelines     # Cox proportional-hazards baseline for the GBSG-2 comparison
